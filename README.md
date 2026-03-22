@@ -1,6 +1,6 @@
 # CVIMU
 
-- [CVIMU](#CVIMU)
+- [CVIMU](#cvimu)
   - [DEPENDENCIES](#dependencies)
   - [HOW](#how)
     - [WORKSPACES](#workspaces)
@@ -20,13 +20,13 @@
     - [built-in keybindings](#built-in-keybindings)
   - [DONATE](#donate)
 
-Visual Studio Code DISTRO With:
+Code-VIM-Ultimate aka CVIMU is a Visual Studio Code DISTRO With:
 
 - Vim Extension
 - [LazyVim like global keybindings](https://www.lazyvim.org/keymaps#bufferlinenvim)
 - Github Copilot & Copilot Chat Extensions
 
-And more sensible defaults For Maximum Productivity and Comfort.
+And sensible defaults For Maximum Productivity and Comfort.
 
 ```bash
 ├── profiles
@@ -68,6 +68,9 @@ install those or uninstall `Bash IDE` extension.
 
 ## HOW
 
+**NOTE:**
+Due to how vscode works, you must first open vscode at least once for creation of `Code/User` directory.
+
 1. Clone `CVIMU` directory in your dotfiles.
 1. Remove `.git`.
 1. Import `prof` profile from [profiles/prof.code-profile](profiles/prof.code-profile).
@@ -91,9 +94,6 @@ New-Item -ItemType SymbolicLink `
   -Path "$env:APPDATA\Code\User\settings.json" `
   -Target "$HOME\.dotfiles\CVIMU\settings.json"
 ```
-
-**NOTE:**
-Due to how vscode works, you must first open vscode at least once for creation of `Code/User` directory.
 
 ### WORKSPACES
 
