@@ -1,6 +1,6 @@
-# VSCLazy
+# CVIMU
 
-- [VSCLazy](#vsclazy)
+- [CVIMU](#CVIMU)
   - [DEPENDENCIES](#dependencies)
   - [HOW](#how)
     - [WORKSPACES](#workspaces)
@@ -68,20 +68,20 @@ install those or uninstall `Bash IDE` extension.
 
 ## HOW
 
-1. Clone `VSCLazy` directory in your dotfiles.
+1. Clone `CVIMU` directory in your dotfiles.
 1. Remove `.git`.
 1. Import `prof` profile from [profiles/prof.code-profile](profiles/prof.code-profile).
 1. Symlink global settings.json file for keybindings.  
    In my case, on linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
 
 ```bash
-ln -sf "$HOME/.dotfiles/VSCLazy/settings.json" "$HOME/.config/Code/User/settings.json"
+ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.json"
 ```
 
 For macOS (untested)
 
 ```bash
-ln -sf "$HOME/.dotfiles/VSCLazy/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 ```
 
 For Windows (untested)
@@ -89,7 +89,7 @@ For Windows (untested)
 ```powershell
 New-Item -ItemType SymbolicLink `
   -Path "$env:APPDATA\Code\User\settings.json" `
-  -Target "$HOME\.dotfiles\VSCLazy\settings.json"
+  -Target "$HOME\.dotfiles\CVIMU\settings.json"
 ```
 
 **NOTE:**
