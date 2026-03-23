@@ -17,7 +17,6 @@
     - [search](#search)
     - [find](#find)
     - [code actions](#code-actions)
-    - [built-in keybindings](#built-in-keybindings)
   - [DONATE](#donate)
 
 Code-VIM-Ultimate aka CVIMU is a Visual Studio Code DISTRO With:
@@ -228,11 +227,6 @@ New-Item -ItemType SymbolicLink `
 | `<leader> c r` | Rename symbol                                    |
 | `<leader> c p` | Preview markdown                                 |
 | `<leader> c u` | Remove unused imports                            |
-
-### built-in keybindings
-
-| Keybinding | Feature |
-| ---------- | ------- |
 
 **Disclaimer**  
 This project is purely a community-driven configuration setup and is not officially affiliated with or endorsed by Visual Studio Code (Microsoft), LazyVim, or any other commercial software vendor.
