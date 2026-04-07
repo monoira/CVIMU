@@ -201,22 +201,21 @@ New-Item -ItemType SymbolicLink `
 
 ### search
 
-| Keybinding     | Feature                           |
-| -------------- | --------------------------------- |
-| `<leader> s d` | Toggle problems panel             |
-| `<leader> s k` | Open command palette              |
-| `<leader> s r` | Search and replace                |
-| `<leader> s s` | Go to symbol in current file      |
-| `<leader> s S` | Go to symbol in a whole workspace |
-| `<leader> /`   | Quick text search                 |
+| Keybinding     | Feature                                    |
+| -------------- | ------------------------------------------ |
+| `ctrl p`       | Open command palette (Obsidian compatible) |
+| `<leader> s d` | Toggle problems panel                      |
+| `<leader> s r` | Search and replace                         |
+| `<leader> s s` | Go to symbol in current file               |
+| `<leader> s S` | Go to symbol in a whole workspace          |
+| `<leader> /`   | Quick text search                          |
 
 ### find
 
-| Keybinding     | Feature                           |
-| -------------- | --------------------------------- |
-| `<leader> f p` | Open recent projects (Workspaces) |
-| `<leader> f r` | Open recent files                 |
-| `<leader> f f` | Quick open file                   |
+| Keybinding     | Feature                               |
+| -------------- | ------------------------------------- |
+| `<leader> f p` | Open recent projects (Workspaces)     |
+| `ctrl o`       | Quick open file (Obsidian compatible) |
 
 ### code actions
 

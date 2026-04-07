@@ -126,7 +126,7 @@
       "commands": ["workbench.actions.view.toggleProblems"]
     },
     {
-      "before": ["<leader>", "s", "k"],
+      "before": ["<C-p>"],
       "commands": ["workbench.action.showCommands"]
     },
     {
@@ -151,11 +151,7 @@
       "commands": ["workbench.action.openRecent"]
     },
     {
-      "before": ["<leader>", "f", "r"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["<leader>", "f", "f"],
+      "before": ["<C-o>"],
       "commands": ["workbench.action.quickOpen"]
     },
     {
