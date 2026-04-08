@@ -45,7 +45,6 @@ Extensions in [profile](./profiles/prof.code-profile):
 - ESLint
 - ES7+ React/Redux/React-Native snippets
 - Prettier - Code formatter
-- GitHub Copilot
 - GitHub Copilot Chat
 - Bash IDE
 - Container Tools
