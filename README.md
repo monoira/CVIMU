@@ -16,6 +16,7 @@
     - [integrated terminal](#integrated-terminal)
     - [search](#search)
     - [find](#find)
+    - [fold](#fold)
     - [code actions](#code-actions)
   - [DONATE](#donate)
 
@@ -23,9 +24,10 @@ Code-VIM-Ultimate aka CVIMU is a Visual Studio Code DISTRO With:
 
 - Vim Extension
 - [LazyVim like global keybindings](https://www.lazyvim.org/keymaps#bufferlinenvim)
-- Github Copilot & Copilot Chat Extensions
+- Copilot Chat Extension for AI agentic workflow and inline suggestions
+- certain changes to keybindings that make working with [Obsidian](https://obsidian.md/) seamless with similar keybindings for muscle memory
 
-And sensible defaults For Maximum Productivity and Comfort.
+and sensible defaults for maximum productivity and comfort.
 
 ```bash
 ├── profiles
@@ -113,16 +115,17 @@ New-Item -ItemType SymbolicLink `
 | `<C-u>`      | Scroll up half page and center   |
 | `ctrl n`     | Down (when given a dropdown)     |
 | `ctrl p`     | Up (when given a dropdown)       |
-| `<leader> e` | Open file explorer               |
-| `ctrl b`     | Close / open explorer            |
+| `<leader> e` | Open file explorer (with focus)  |
+| `ctrl b`     | Close / open explorer (no focus) |
 
 ### navigation
 
-| Keybinding            | Feature                                  |
-| --------------------- | ---------------------------------------- |
-| `s`                   | Search Word (EasyMotion)                 |
-| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion) |
-| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)  |
+| Keybinding            | Feature                                                                                            |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| `s`                   | Search Word (EasyMotion)                                                                           |
+| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                                           |
+| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                                            |
+| `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir (Obsidian compatible) |
 
 ### AI
 
@@ -216,6 +219,15 @@ New-Item -ItemType SymbolicLink `
 | -------------- | ------------------------------------- |
 | `<leader> f p` | Open recent projects (Workspaces)     |
 | `ctrl o`       | Quick open file (Obsidian compatible) |
+
+### fold
+
+| Keybinding | Feature        |
+| ---------- | -------------- |
+| `za`       | toggle fold    |
+| `zc`       | fold           |
+| `zo`       | open fold      |
+| `zR`       | open all folds |
 
 ### code actions
 
