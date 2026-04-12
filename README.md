@@ -3,7 +3,11 @@
 - [CVIMU](#cvimu)
   - [DEPENDENCIES](#dependencies)
   - [HOW](#how)
-    - [WORKSPACES](#workspaces)
+    - [for Linux](#for-linux)
+    - [for MacOS (untested)](#for-macos-untested)
+    - [for Windows (untested)](#for-windows-untested)
+  - [WORKSPACES](#workspaces)
+  - [Github Copilot Chat bug when importing from profile](#github-copilot-chat-bug-when-importing-from-profile)
   - [KEYBINDINGS](#keybindings)
     - [fixes to vscode](#fixes-to-vscode)
     - [navigation](#navigation)
@@ -77,17 +81,28 @@ Due to how vscode works, you must first open vscode at least once for creation o
 1. Symlink global settings.json file for keybindings.  
    In my case, on linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
 
+### for Linux
+
+do everything in [HOW](#how)  
+and then
+
 ```bash
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.json"
 ```
 
-For macOS (untested)
+### for MacOS (untested)
+
+do everything in [HOW](#how)  
+and then
 
 ```bash
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 ```
 
-For Windows (untested)
+### for Windows (untested)
+
+do everything in [HOW](#how)  
+and then
 
 ```powershell
 New-Item -ItemType SymbolicLink `
@@ -95,12 +110,22 @@ New-Item -ItemType SymbolicLink `
   -Target "$HOME\.dotfiles\CVIMU\settings.json"
 ```
 
-### WORKSPACES
+## WORKSPACES
 
 - Export your workspaces to [workspaces](./workspaces/) via `File > Save Workspace As...`
 - go to containing directory of them all
 - select them all with `ctrl` + `a`
 - drop them all in opened vscode instance
+
+## Github Copilot Chat bug when importing from profile
+
+There is [issue](https://github.com/microsoft/vscode/issues/268852)  
+when importing any profile that has `Github Copilot Chat` extension,
+workaround is that I have `Github Copilot Chat` removed from [prof.code-profile](./profiles/prof.code-profile)  
+and when you finish installing this setup, you must manually search `Github Copilot Chat` in extensions
+search and press install there. So basically it comes with `Github Copilot Chat` extension's configurations
+configured, but extension itself is not installed, because it crashes vscode upon importing.  
+Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ## KEYBINDINGS
 
