@@ -256,13 +256,13 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### code actions
 
-| Keybinding     | Feature                                          |
-| -------------- | ------------------------------------------------ |
-| `<leader> c a` | Quick fix                                        |
-| `<leader> c A` | Source action (depends on `Markdown All In One`) |
-| `<leader> c r` | Rename symbol                                    |
-| `<leader> c p` | Preview markdown                                 |
-| `<leader> c u` | Remove unused imports                            |
+| Keybinding     | Feature               |
+| -------------- | --------------------- |
+| `<leader> c a` | Quick fix             |
+| `<leader> c A` | Source action         |
+| `<leader> c r` | Rename symbol         |
+| `<leader> c p` | Preview markdown      |
+| `<leader> c u` | Remove unused imports |
 
 **Disclaimer**  
 This project is purely a community-driven configuration setup and is not officially affiliated with or endorsed by Visual Studio Code (Microsoft), LazyVim, or any other commercial software vendor.
