@@ -22,12 +22,12 @@
 
 Code-VIM-Ultimate aka CVIMU is a Visual Studio Code DISTRO With:
 
-- Vim Extension
-- [LazyVim like global keybindings](https://www.lazyvim.org/keymaps#bufferlinenvim)
-- Copilot Chat Extension for AI agentic workflow and inline suggestions
-- certain changes to keybindings that make working with [Obsidian](https://obsidian.md/) seamless with similar keybindings for muscle memory
+- Vim Extension.
+- [LazyVim](https://www.lazyvim.org/keymaps)-like global keybindings.
+- Copilot Chat Extension for AI agentic workflow and inline suggestions (you remove extension and it's configs in non-global `settings.json` and `keybindings.json` if you want to use claude code instead)
+- Compatible with [Obsidian](https://obsidian.md/), same keybindings like `ctrl o` and `ctrl p` for opening recent files and command palette instead of LazyVim's ones as well as few others.
 
-and sensible defaults for maximum productivity and comfort.
+plus sensible defaults and [fixes to vscode](#fixes-to-vscode) for maximum productivity and comfort.
 
 ```bash
 ├── profiles
@@ -39,22 +39,22 @@ and sensible defaults for maximum productivity and comfort.
 
 Extensions in [profile](./profiles/prof.code-profile):
 
-- Tailwind CSS IntelliSense
-- Catppuccin for VSCode
-- markdownlint
 - ESLint
-- ES7+ React/Redux/React-Native snippets
 - Prettier - Code formatter
 - GitHub Copilot Chat
 - Bash IDE
 - Container Tools
 - Postman
 - Paste JSON as Code
-- YAML
 - Code Spell Checker
 - vscode-icons
 - Vim
+- YAML
+- markdownlint
 - Markdown All in One
+- Catppuccin for VSCode
+- ES7+ React/Redux/React-Native snippets
+- Tailwind CSS IntelliSense
 
 ## DEPENDENCIES
 
@@ -121,7 +121,7 @@ New-Item -ItemType SymbolicLink `
 
 | Keybinding            | Feature                                                                                            |
 | --------------------- | -------------------------------------------------------------------------------------------------- |
-| `s`                   | Search Word (EasyMotion)                                                                           |
+| `s`                   | Search word (EasyMotion)                                                                           |
 | `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                                           |
 | `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                                            |
 | `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir (Obsidian compatible) |
