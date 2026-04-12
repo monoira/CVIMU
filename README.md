@@ -165,19 +165,20 @@ New-Item -ItemType SymbolicLink `
 
 ### buffers aka editors
 
-| Keybinding     | Feature                    |
-| -------------- | -------------------------- |
-| `[ b`          | Previous editor tab        |
-| `] b`          | Next editor tab            |
-| `[ B`          | Move editor left           |
-| `] B`          | Move editor right          |
-| `alt {NUMBER}` | go to editor {NUMBER}      |
-| `ctrl w`       | Close current editor       |
-| `<leader> b d` | Close current editor       |
-| `<leader> b r` | Close editors to the right |
-| `<leader> b l` | Close editors to the left  |
-| `<leader> b o` | Close all other editors    |
-| `<leader> e`   | Focus file explorer        |
+| Keybinding     | Feature                       |
+| -------------- | ----------------------------- |
+| `[ b`          | Previous editor tab           |
+| `] b`          | Next editor tab               |
+| `[ B`          | Move editor left              |
+| `] B`          | Move editor right             |
+| `alt {NUMBER}` | go to editor {NUMBER}         |
+| `ctrl shift t` | Reopen recently closed editor |
+| `ctrl w`       | Close current editor          |
+| `<leader> b d` | Close current editor          |
+| `<leader> b r` | Close editors to the right    |
+| `<leader> b l` | Close editors to the left     |
+| `<leader> b o` | Close all other editors       |
+| `<leader> e`   | Focus file explorer           |
 
 ### file explorer
 
