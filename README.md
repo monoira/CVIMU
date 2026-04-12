@@ -24,7 +24,7 @@
     - [code actions](#code-actions)
   - [DONATE](#donate)
 
-Code-VIM-Ultimate aka CVIMU is a Visual Studio Code DISTRO With:
+CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code DISTRO with:
 
 - Vim Extension.
 - [LazyVim](https://www.lazyvim.org/keymaps)-like global keybindings.
@@ -144,12 +144,12 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### navigation
 
-| Keybinding            | Feature                                                                                            |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| `s`                   | Search word (EasyMotion)                                                                           |
-| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                                           |
-| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                                            |
-| `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir (Obsidian compatible) |
+| Keybinding            | Feature                                                                                         |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
+| `s`                   | Search word (EasyMotion)                                                                        |
+| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                                        |
+| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                                         |
+| `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir (same in Obsidian) |
 
 ### AI
 
@@ -190,20 +190,20 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### buffers aka editors
 
-| Keybinding     | Feature                       |
-| -------------- | ----------------------------- |
-| `[ b`          | Previous editor tab           |
-| `] b`          | Next editor tab               |
-| `[ B`          | Move editor left              |
-| `] B`          | Move editor right             |
-| `alt {NUMBER}` | go to editor {NUMBER}         |
-| `ctrl shift t` | Reopen recently closed editor |
-| `ctrl w`       | Close current editor          |
-| `<leader> b d` | Close current editor          |
-| `<leader> b r` | Close editors to the right    |
-| `<leader> b l` | Close editors to the left     |
-| `<leader> b o` | Close all other editors       |
-| `<leader> e`   | Focus file explorer           |
+| Keybinding     | Feature                                          |
+| -------------- | ------------------------------------------------ |
+| `[ b`          | Previous editor tab                              |
+| `] b`          | Next editor tab                                  |
+| `[ B`          | Move editor left                                 |
+| `] B`          | Move editor right                                |
+| `alt {NUMBER}` | go to editor {NUMBER} (same in Obsidian)         |
+| `ctrl shift t` | Reopen recently closed editor (same in Obsidian) |
+| `ctrl w`       | Close current editor (same in Obsidian)          |
+| `<leader> b d` | Close current editor                             |
+| `<leader> b r` | Close editors to the right                       |
+| `<leader> b l` | Close editors to the left                        |
+| `<leader> b o` | Close all other editors                          |
+| `<leader> e`   | Focus file explorer                              |
 
 ### file explorer
 
@@ -229,21 +229,21 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### search
 
-| Keybinding     | Feature                                    |
-| -------------- | ------------------------------------------ |
-| `ctrl p`       | Open command palette (Obsidian compatible) |
-| `<leader> s d` | Toggle problems panel                      |
-| `<leader> s r` | Search and replace                         |
-| `<leader> s s` | Go to symbol in current file               |
-| `<leader> s S` | Go to symbol in a whole workspace          |
-| `<leader> /`   | Quick text search                          |
+| Keybinding     | Feature                                 |
+| -------------- | --------------------------------------- |
+| `ctrl p`       | Open command palette (same in Obsidian) |
+| `<leader> s d` | Toggle problems panel                   |
+| `<leader> s r` | Search and replace                      |
+| `<leader> s s` | Go to symbol in current file            |
+| `<leader> s S` | Go to symbol in a whole workspace       |
+| `<leader> /`   | Quick text search in a whole repository |
 
 ### find
 
-| Keybinding     | Feature                               |
-| -------------- | ------------------------------------- |
-| `<leader> f p` | Open recent projects (Workspaces)     |
-| `ctrl o`       | Quick open file (Obsidian compatible) |
+| Keybinding     | Feature                            |
+| -------------- | ---------------------------------- |
+| `<leader> f p` | Open recent projects (Workspaces)  |
+| `ctrl o`       | Quick open file (same in Obsidian) |
 
 ### fold
 
