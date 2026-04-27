@@ -150,8 +150,8 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 | `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                     |
 | `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                      |
 | `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir |
-| `alt h`               | focus to left pane                                                           |
-| `alt l`               | focus to right pane                                                          |
+| `alt h`               | Focus to left pane                                                           |
+| `alt l`               | Focus to right pane                                                          |
 
 ### AI
 
