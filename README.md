@@ -166,6 +166,7 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 | -------------- | --------------------- |
 | `g d`          | Go to definition      |
 | `g D`          | Go to declaration     |
+| `g f`          | Go to file            |
 | `g i`          | Go to implementation  |
 | `g r`          | Go to references      |
 | `g h`          | Go to call hierarchy  |
