@@ -247,12 +247,12 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### fold
 
-| Keybinding | Feature        |
-| ---------- | -------------- |
-| `za`       | toggle fold    |
-| `zc`       | fold           |
-| `zo`       | open fold      |
-| `zR`       | open all folds |
+| Keybinding | Feature     |
+| ---------- | ----------- |
+| `za`       | toggle fold |
+| `zR`       | unfold all  |
+| `zc`       | fold        |
+| `zo`       | open fold   |
 
 ### code actions
 
