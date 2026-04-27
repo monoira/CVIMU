@@ -29,7 +29,7 @@ CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code DISTRO with:
 - Vim Extension.
 - [LazyVim](https://www.lazyvim.org/keymaps)-like global keybindings.
 - Copilot Chat Extension for AI agentic workflow and inline suggestions (you remove extension and it's configs in non-global `settings.json` and `keybindings.json` if you want to use claude code instead)
-- Compatible with [Obsidian](https://obsidian.md/), same keybindings like `ctrl o` and `ctrl p` for opening recent files and command palette instead of LazyVim's ones as well as few others.
+- Compatible with [Obsidian](https://obsidian.md), same keybindings like `ctrl o` and `ctrl p` for opening recent files and command palette instead of LazyVim's ones as well as few others.
 
 plus sensible defaults and [fixes to vscode](#fixes-to-vscode) for maximum productivity and comfort.
 
@@ -144,12 +144,14 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### navigation
 
-| Keybinding            | Feature                                                                                         |
-| --------------------- | ----------------------------------------------------------------------------------------------- |
-| `s`                   | Search word (EasyMotion)                                                                        |
-| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                                        |
-| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                                         |
-| `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir (same in Obsidian) |
+| Keybinding            | Feature                                                                      |
+| --------------------- | ---------------------------------------------------------------------------- |
+| `s`                   | Search word (EasyMotion)                                                     |
+| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                     |
+| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                      |
+| `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir |
+| `alt h`               | focus to left pane                                                           |
+| `alt l`               | focus to right pane                                                          |
 
 ### AI
 
@@ -190,20 +192,20 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### buffers aka editors
 
-| Keybinding     | Feature                                          |
-| -------------- | ------------------------------------------------ |
-| `[ b`          | Previous editor tab                              |
-| `] b`          | Next editor tab                                  |
-| `[ B`          | Move editor left                                 |
-| `] B`          | Move editor right                                |
-| `alt {NUMBER}` | go to editor {NUMBER} (same in Obsidian)         |
-| `ctrl shift t` | Reopen recently closed editor (same in Obsidian) |
-| `ctrl w`       | Close current editor (same in Obsidian)          |
-| `<leader> b d` | Close current editor                             |
-| `<leader> b r` | Close editors to the right                       |
-| `<leader> b l` | Close editors to the left                        |
-| `<leader> b o` | Close all other editors                          |
-| `<leader> e`   | Focus file explorer                              |
+| Keybinding     | Feature                       |
+| -------------- | ----------------------------- |
+| `[ b`          | Previous editor tab           |
+| `] b`          | Next editor tab               |
+| `[ B`          | Move editor left              |
+| `] B`          | Move editor right             |
+| `alt {NUMBER}` | go to editor {NUMBER}         |
+| `ctrl shift t` | Reopen recently closed editor |
+| `ctrl w`       | Close current editor          |
+| `<leader> b d` | Close current editor          |
+| `<leader> b r` | Close editors to the right    |
+| `<leader> b l` | Close editors to the left     |
+| `<leader> b o` | Close all other editors       |
+| `<leader> e`   | Focus file explorer           |
 
 ### file explorer
 
@@ -231,7 +233,7 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 | Keybinding     | Feature                                 |
 | -------------- | --------------------------------------- |
-| `ctrl p`       | Open command palette (same in Obsidian) |
+| `ctrl p`       | Open command palette                    |
 | `<leader> s d` | Toggle problems panel                   |
 | `<leader> s r` | Search and replace                      |
 | `<leader> s s` | Go to symbol in current file            |
@@ -240,10 +242,10 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ### find
 
-| Keybinding     | Feature                            |
-| -------------- | ---------------------------------- |
-| `<leader> f p` | Open recent projects (Workspaces)  |
-| `ctrl o`       | Quick open file (same in Obsidian) |
+| Keybinding     | Feature                           |
+| -------------- | --------------------------------- |
+| `<leader> f p` | Open recent projects (Workspaces) |
+| `ctrl o`       | Quick open file                   |
 
 ### fold
 
