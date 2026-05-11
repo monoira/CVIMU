@@ -238,6 +238,7 @@ Issue is open at `microsoft/vscode` and getting fixed slowly.
 | `<leader> s d` | Toggle problems panel                   |
 | `<leader> s r` | Search and replace                      |
 | `<leader> s s` | Go to symbol in current file            |
+| `ctrl shift o` | Go to symbol in current file            |
 | `<leader> s S` | Go to symbol in a whole workspace       |
 | `<leader> /`   | Quick text search in a whole repository |
 
