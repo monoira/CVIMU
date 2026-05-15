@@ -7,7 +7,6 @@
     - [for MacOS (untested)](#for-macos-untested)
     - [for Windows (untested)](#for-windows-untested)
   - [WORKSPACES](#workspaces)
-  - [Github Copilot Chat bug when importing from profile](#github-copilot-chat-bug-when-importing-from-profile)
   - [KEYBINDINGS](#keybindings)
     - [fixes to vscode](#fixes-to-vscode)
     - [navigation](#navigation)
@@ -116,16 +115,6 @@ New-Item -ItemType SymbolicLink `
 - go to containing directory of them all
 - select them all with `ctrl` + `a`
 - drop them all in opened vscode instance
-
-## Github Copilot Chat bug when importing from profile
-
-There is [issue](https://github.com/microsoft/vscode/issues/268852)  
-when importing any profile that has `Github Copilot Chat` extension,
-workaround is that I have `Github Copilot Chat` removed from [prof.code-profile](./profiles/prof.code-profile)  
-and when you finish installing this setup, you must manually search `Github Copilot Chat` in extensions
-search and press install there. So basically it comes with `Github Copilot Chat` extension's configurations
-configured, but extension itself is not installed, because it crashes vscode upon importing.  
-Issue is open at `microsoft/vscode` and getting fixed slowly.
 
 ## KEYBINDINGS
 
