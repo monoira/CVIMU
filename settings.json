@@ -6,6 +6,10 @@
   "update.mode": "none",
   "update.showReleaseNotes": false,
 
+  // disabling alt focusing on MenuBar
+  "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
+
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<C-u>"],
