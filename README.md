@@ -27,8 +27,8 @@ CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code DISTRO with:
 
 - Vim Extension.
 - [LazyVim](https://www.lazyvim.org/keymaps)-like global keybindings.
-- Compatible with [Obsidian](https://obsidian.md), same keybindings like `ctrl o` and `ctrl p` for opening recent files and command palette instead of LazyVim's ones as well as few others.
-- Custom Keybindings for Copilot and Copilot Chat (change / remove in `settings.json` and `keybindings.json`).
+- Somewhat compatible with [Obsidian](https://obsidian.md), same keybindings like `ctrl o` and `ctrl p` for opening recent files and command palette instead of LazyVim's ones, as well as few others.
+- Custom Keybindings for Copilot Chat & Copilot Autocomplete (you can change / remove in `settings.json` and `keybindings.json`).
 
 plus sensible defaults and [fixes to vscode](#fixes-to-vscode) for maximum productivity and comfort.
 
