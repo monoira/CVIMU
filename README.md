@@ -37,8 +37,13 @@ plus sensible defaults and [fixes to vscode](#fixes-to-vscode) for maximum produ
 ![showcase picture 3](./docs/3-showcase.png)
 
 ```bash
+├── docs
+│   ├── 1-showcase.png
+│   ├── 2-showcase.png
+│   └── 3-showcase.png
 ├── profiles
-│   └── prof.code-profile
+│   └── prof.code-profile
+├── README.md
 ├── settings.json
 └── Workspaces
     └── PLACE YOUR WORKSPACES HERE
