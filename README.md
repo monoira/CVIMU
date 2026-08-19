@@ -32,6 +32,10 @@ CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code DISTRO with:
 
 plus sensible defaults and [fixes to vscode](#fixes-to-vscode) for maximum productivity and comfort.
 
+![showcase picture 1](./docs/1-showcase.png)
+![showcase picture 2](./docs/2-showcase.png)
+![showcase picture 3](./docs/3-showcase.png)
+
 ```bash
 ├── profiles
 │   └── prof.code-profile
@@ -76,14 +80,15 @@ Due to how vscode works, you must first open vscode at least once for creation o
 
 1. Clone `CVIMU` directory in your dotfiles.
 1. Remove `.git`.
+1. Remove [docs](./docs/).
 1. Import `prof` profile from [profiles/prof.code-profile](profiles/prof.code-profile).
 1. Symlink global settings.json file for keybindings.  
-   In my case, on linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
+   In my case, on Linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
 
 ### for Linux
 
 do everything in [HOW](#how)  
-and then
+then
 
 ```bash
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.json"
