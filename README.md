@@ -8,7 +8,7 @@
     - [for Windows (untested)](#for-windows-untested)
   - [WORKSPACES](#workspaces)
   - [KEYBINDINGS](#keybindings)
-    - [fixes to vscode](#fixes-to-vscode)
+    - [fixes to VSCode](#fixes-to-vscode)
     - [navigation](#navigation)
     - [AI](#ai)
     - [GOTOs](#gotos)
@@ -23,14 +23,14 @@
     - [code actions](#code-actions)
   - [DONATE](#donate)
 
-CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code DISTRO with:
+CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code setup with:
 
 - Vim Extension.
 - [LazyVim](https://www.lazyvim.org/keymaps)-like global keybindings.
 - Somewhat compatible with [Obsidian](https://obsidian.md), same keybindings like `ctrl o` and `ctrl p` for opening recent files and command palette instead of LazyVim's ones, as well as few others.
 - Custom Keybindings for Copilot Chat & Copilot Autocomplete (you can change / remove in `settings.json` and `keybindings.json`).
 
-plus sensible defaults and [fixes to vscode](#fixes-to-vscode) for maximum productivity and comfort.
+plus sensible defaults and [fixes to VSCode](#fixes-to-vscode) for maximum productivity and comfort.
 
 ![showcase picture 1](./docs/1-showcase.png)
 ![showcase picture 2](./docs/2-showcase.png)
@@ -59,7 +59,7 @@ Extensions in [profile](./profiles/prof.code-profile):
 - Postman
 - Paste JSON as Code
 - Code Spell Checker
-- vscode-icons
+- VSCode-icons
 - Vim
 - YAML
 - markdownlint
@@ -81,19 +81,20 @@ install those or uninstall `Bash IDE` extension.
 ## HOW
 
 **NOTE:**
-Due to how vscode works, you must first open vscode at least once for creation of `Code/User` directory.
+Due to how VSCode works, you must first open VSCode at least once for creation of `Code/User` directory.
 
-1. Clone `CVIMU` directory in your dotfiles.
-1. Remove `.git`.
-1. Remove [docs](./docs/).
-1. Import `prof` profile from [profiles/prof.code-profile](profiles/prof.code-profile).
-1. Symlink global settings.json file for keybindings.  
-   In my case, on Linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
+**this project is made of three parts:**
+
+- [profiles/prof.code-profile](profiles/prof.code-profile)
+- [global settings.json](./settings.json)
+- **optional** [Workspaces](./Workspaces/) directory where you can save export your VSCode workspaces.
+
+You can integrate those into your `.dotfiles` setup.
+In my case, on Linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
 
 ### for Linux
 
-do everything in [HOW](#how)  
-then
+symlinking global `settings.json`
 
 ```bash
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.json"
@@ -101,8 +102,7 @@ ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.j
 
 ### for MacOS (untested)
 
-do everything in [HOW](#how)  
-and then
+symlinking global `settings.json`
 
 ```bash
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
@@ -110,8 +110,7 @@ ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/Library/Application Support/
 
 ### for Windows (untested)
 
-do everything in [HOW](#how)  
-and then
+symlinking global `settings.json`
 
 ```powershell
 New-Item -ItemType SymbolicLink `
@@ -124,11 +123,11 @@ New-Item -ItemType SymbolicLink `
 - Export your workspaces to [workspaces](./workspaces/) via `File > Save Workspace As...`
 - go to containing directory of them all
 - select them all with `ctrl` + `a`
-- drop them all in opened vscode instance
+- drop them all in opened VSCode instance
 
 ## KEYBINDINGS
 
-### fixes to vscode
+### fixes to VSCode
 
 `<leader>` is set to `space`.
 
