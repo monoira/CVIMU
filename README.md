@@ -6,19 +6,19 @@
     - [for Linux](#for-linux)
     - [for MacOS (untested)](#for-macos-untested)
     - [for Windows (untested)](#for-windows-untested)
-  - [WORKSPACES](#workspaces)
+  - [WORKSPACES AND HOW TO USE THEM](#workspaces-and-how-to-use-them)
   - [KEYBINDINGS](#keybindings)
     - [fixes to VSCode](#fixes-to-vscode)
     - [navigation](#navigation)
+    - [switching files and workspaces](#switching-files-and-workspaces)
+    - [editors / buffers](#editors--buffers)
+    - [file explorer](#file-explorer)
     - [AI](#ai)
     - [GOTOs](#gotos)
     - [hover over code](#hover-over-code)
     - [warnings and diagnostics](#warnings-and-diagnostics)
-    - [buffers aka editors](#buffers-aka-editors)
-    - [file explorer](#file-explorer)
     - [integrated terminal](#integrated-terminal)
     - [search](#search)
-    - [find](#find)
     - [fold](#fold)
     - [code actions](#code-actions)
   - [DONATE](#donate)
@@ -46,27 +46,26 @@ plus sensible defaults and [fixes to VSCode](#fixes-to-vscode) for maximum produ
 ├── README.md
 ├── settings.json
 └── Workspaces
-    └── PLACE YOUR WORKSPACES HERE
+    └── WORKSPACES AND HOW TO USE THEM
 ```
 
 Extensions in [profile](./profiles/prof.code-profile):
 
 - ESLint
 - Prettier - Code formatter
-- GitHub Copilot Chat
-- Bash IDE
 - Container Tools
-- Postman
 - Paste JSON as Code
 - Code Spell Checker
 - VSCode-icons
 - Vim
 - YAML
-- markdownlint
-- Markdown All in One
 - Catppuccin for VSCode
 - ES7+ React/Redux/React-Native snippets
 - Tailwind CSS IntelliSense
+- Postman
+- Markdown All in One
+- markdownlint
+- Bash IDE
 
 ## DEPENDENCIES
 
@@ -83,14 +82,22 @@ install those or uninstall `Bash IDE` extension.
 **NOTE:**
 Due to how VSCode works, you must first open VSCode at least once for creation of `Code/User` directory.
 
+**prerequisites:**
+
+- have dotfiles directory.
+- basic knowledge of vim keybindings, json and git.
+
 **this project is made of three parts:**
 
 - [profiles/prof.code-profile](profiles/prof.code-profile)
 - [global settings.json](./settings.json)
-- **optional** [Workspaces](./Workspaces/) directory where you can save export your VSCode workspaces.
+- **optional** [Workspaces](./Workspaces/) directory where you can export and keep your VSCode workspaces.
 
-You can integrate those into your `.dotfiles` setup.
-In my case, on Linux, I save dotfiles at `~/.dotfiles`, which is managed with `git` and `stow`.
+you can clone this project inside your `.dotfiles`  
+then remove [docs](./docs/) and .git  
+then you can import [profile](./profiles/prof.code-profile)  
+**then** symlink global `settings.json`.
+That's it.
 
 ### for Linux
 
@@ -118,9 +125,9 @@ New-Item -ItemType SymbolicLink `
   -Target "$HOME\.dotfiles\CVIMU\settings.json"
 ```
 
-## WORKSPACES
+## WORKSPACES AND HOW TO USE THEM
 
-- Export your workspaces to [workspaces](./workspaces/) via `File > Save Workspace As...`
+- Export your workspaces to your `.dotfiles/CVIMU/Workspaces` via `File > Save Workspace As...`
 - go to containing directory of them all
 - select them all with `ctrl` + `a`
 - drop them all in opened VSCode instance
@@ -129,27 +136,68 @@ New-Item -ItemType SymbolicLink `
 
 ### fixes to VSCode
 
-`<leader>` is set to `space`.
+- `<leader>` is set to `space`.
+- extension updates are disabled by default to reduce interruptions.
+  You can update extensions by going to `extensions > check for extension updates`.
 
-| Keybinding   | Feature                          |
-| ------------ | -------------------------------- |
-| `<C-d>`      | Scroll down half page and center |
-| `<C-u>`      | Scroll up half page and center   |
-| `ctrl n`     | Down (when given a dropdown)     |
-| `ctrl p`     | Up (when given a dropdown)       |
-| `<leader> e` | Open file explorer (with focus)  |
-| `ctrl b`     | Close / open explorer (no focus) |
+| Keybinding   | Feature                                  |
+| ------------ | ---------------------------------------- |
+| `<C-d>`      | Scroll down half page and center         |
+| `<C-u>`      | Scroll up half page and center           |
+| `ctrl n`     | Down (when given a dropdown)             |
+| `ctrl p`     | Up (when given a dropdown)               |
+| `<leader> e` | Open file explorer (with focus)          |
+| `ctrl b`     | Close / open explorer (no focus, toggle) |
 
 ### navigation
 
-| Keybinding            | Feature                                                                      |
-| --------------------- | ---------------------------------------------------------------------------- |
-| `s`                   | Search word (EasyMotion)                                                     |
-| `<leader> <leader> b` | Jump to word (before cursor)(EasyMotion)                                     |
-| `<leader> <leader> w` | Jump to word (after cursor)(EasyMotion)                                      |
-| `ctrl alt r`          | (when file explorer is focused) open containing folder of focused file / dir |
-| `alt h`               | Focus to left pane                                                           |
-| `alt l`               | Focus to right pane                                                          |
+| Keybinding            | Feature                                   |
+| --------------------- | ----------------------------------------- |
+| `alt h`               | Focus to left pane                        |
+| `alt l`               | Focus to right pane                       |
+| `s`                   | Search word (EasyMotion)                  |
+| `<leader> <leader> b` | Jump to word (before cursor) (EasyMotion) |
+| `<leader> <leader> w` | Jump to word (after cursor) (EasyMotion)  |
+
+### switching files and workspaces
+
+| Keybinding                  | Feature                                                                    |
+| --------------------------- | -------------------------------------------------------------------------- |
+| `<leader> f p`              | Open recent workspaces                                                     |
+| `<leader> f p`+`ctrl enter` | Open recent workspaces in a new window                                     |
+| `ctrl o`                    | Quick open file (replaces current file with selected one, like `Obsidian`) |
+| `ctrl o`+`ctrl enter`       | Quick open file in a new tab, like `Obsidian`                              |
+
+### editors / buffers
+
+| Keybinding     | Feature                       |
+| -------------- | ----------------------------- |
+| `[ b`          | Previous editor tab           |
+| `] b`          | Next editor tab               |
+| `[ B`          | Move editor left              |
+| `] B`          | Move editor right             |
+| `alt {NUMBER}` | Go to editor {NUMBER}         |
+| `ctrl shift t` | Reopen recently closed editor |
+| `ctrl w`       | Close current editor          |
+| `<leader> b d` | Close current editor          |
+| `<leader> b r` | Close editors to the right    |
+| `<leader> b l` | Close editors to the left     |
+| `<leader> b o` | Close all other editors       |
+
+### file explorer
+
+| Keybinding   | Feature                                          |
+| ------------ | ------------------------------------------------ |
+| `<leader> e` | Focus file explorer                              |
+| `a`          | Create a new file                                |
+| `f`          | Create a new directory                           |
+| `d`          | Delete selected file/directory                   |
+| `y`          | Copy selected file/directory                     |
+| `p`          | Paste into selected directory                    |
+| `x`          | Cut selected file/directory                      |
+| `r`          | Rename selected file/directory                   |
+| `o`          | Reveal file/directory in OS file manager         |
+| `ctrl alt r` | Open containing folder of focused file/directory |
 
 ### AI
 
@@ -189,36 +237,6 @@ New-Item -ItemType SymbolicLink `
 | `] w`      | Next warning        |
 | `[ w`      | Previous warning    |
 
-### buffers aka editors
-
-| Keybinding     | Feature                       |
-| -------------- | ----------------------------- |
-| `[ b`          | Previous editor tab           |
-| `] b`          | Next editor tab               |
-| `[ B`          | Move editor left              |
-| `] B`          | Move editor right             |
-| `alt {NUMBER}` | go to editor {NUMBER}         |
-| `ctrl shift t` | Reopen recently closed editor |
-| `ctrl w`       | Close current editor          |
-| `<leader> b d` | Close current editor          |
-| `<leader> b r` | Close editors to the right    |
-| `<leader> b l` | Close editors to the left     |
-| `<leader> b o` | Close all other editors       |
-| `<leader> e`   | Focus file explorer           |
-
-### file explorer
-
-| Keybinding | Feature                                  |
-| ---------- | ---------------------------------------- |
-| `a`        | Create a new file                        |
-| `f`        | Create a new directory                   |
-| `d`        | Delete selected file/directory           |
-| `y`        | Copy selected file/directory             |
-| `p`        | Paste into selected directory            |
-| `x`        | Cut selected file/directory              |
-| `r`        | Rename selected file/directory           |
-| `o`        | Reveal file/directory in OS file manager |
-
 ### integrated terminal
 
 | Keybinding     | Feature                           |
@@ -239,13 +257,6 @@ New-Item -ItemType SymbolicLink `
 | `ctrl shift o` | Go to symbol in current file            |
 | `<leader> s S` | Go to symbol in a whole workspace       |
 | `<leader> /`   | Quick text search in a whole repository |
-
-### find
-
-| Keybinding     | Feature                           |
-| -------------- | --------------------------------- |
-| `<leader> f p` | Open recent projects (Workspaces) |
-| `ctrl o`       | Quick open file                   |
 
 ### fold
 

@@ -1,5 +1,6 @@
 {
   "window.newWindowProfile": "prof",
+  "window.newWindowDimensions": "maximized",
   "security.workspace.trust.untrustedFiles": "open",
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
