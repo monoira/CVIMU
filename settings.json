@@ -108,6 +108,10 @@
       "commands": ["workbench.action.moveEditorRightInGroup"]
     },
     {
+      "before": ["<leader>", "f", "p"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
       "before": ["<leader>", "b", "d"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
@@ -132,10 +136,6 @@
       "commands": ["workbench.actions.view.toggleProblems"]
     },
     {
-      "before": ["<C-p>"],
-      "commands": ["workbench.action.showCommands"]
-    },
-    {
       "before": ["<leader>", "s", "r"],
       "commands": ["workbench.action.replaceInFiles"]
     },
@@ -151,14 +151,6 @@
     {
       "before": ["<leader>", "/"],
       "commands": ["workbench.action.quickTextSearch"]
-    },
-    {
-      "before": ["<leader>", "f", "p"],
-      "commands": ["workbench.action.openRecent"]
-    },
-    {
-      "before": ["<C-o>"],
-      "commands": ["workbench.action.quickOpen"]
     },
     {
       "before": ["<leader>", "g", "g"],
