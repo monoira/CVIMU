@@ -10,7 +10,7 @@
   - [KEYBINDINGS](#keybindings)
     - [fixes to VSCode](#fixes-to-vscode)
     - [navigation](#navigation)
-    - [switching files and workspaces](#switching-files-and-workspaces)
+    - [QuickOpen and workspace switching](#quickopen-and-workspace-switching)
     - [editors / buffers](#editors--buffers)
     - [file explorer](#file-explorer)
     - [AI](#ai)
@@ -35,6 +35,7 @@ plus sensible defaults and [fixes to VSCode](#fixes-to-vscode) for maximum produ
 ![showcase picture 1](./docs/1-showcase.png)
 ![showcase picture 2](./docs/2-showcase.png)
 ![showcase picture 3](./docs/3-showcase.png)
+![showcase picture 4](./docs/4-showcase.png)
 
 ```bash
 ├── docs
@@ -159,14 +160,13 @@ New-Item -ItemType SymbolicLink `
 | `<leader> <leader> b` | Jump to word (before cursor) (EasyMotion) |
 | `<leader> <leader> w` | Jump to word (after cursor) (EasyMotion)  |
 
-### switching files and workspaces
+### QuickOpen and workspace switching
 
-| Keybinding                  | Feature                                                                    |
-| --------------------------- | -------------------------------------------------------------------------- |
-| `<leader> f p`              | Open recent workspaces                                                     |
-| `<leader> f p`+`ctrl enter` | Open recent workspaces in a new window                                     |
-| `ctrl o`                    | Quick open file (replaces current file with selected one, like `Obsidian`) |
-| `ctrl o`+`ctrl enter`       | Quick open file in a new tab, like `Obsidian`                              |
+| Keybinding                  | Feature                                |
+| --------------------------- | -------------------------------------- |
+| `ctrl o`                    | QuickOpen file in a new tab            |
+| `<leader> f p`              | Open recent workspaces                 |
+| `<leader> f p`+`ctrl enter` | Open recent workspaces in a new window |
 
 ### editors / buffers
 
