@@ -41,7 +41,8 @@ plus sensible defaults and [fixes to VSCode](#fixes-to-vscode) for maximum produ
 ├── docs
 │   ├── 1-showcase.png
 │   ├── 2-showcase.png
-│   └── 3-showcase.png
+│   ├── 3-showcase.png
+│   └── 4-showcase.png
 ├── profiles
 │   └── prof.code-profile
 ├── README.md
