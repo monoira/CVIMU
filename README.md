@@ -150,6 +150,7 @@ New-Item -ItemType SymbolicLink `
 | `ctrl p`     | Up (when given a dropdown)               |
 | `<leader> e` | Open file explorer (with focus)          |
 | `ctrl b`     | Close / open explorer (no focus, toggle) |
+| `ctrl alt b` | toggle bold (in markdown)                |
 
 ### navigation
 
