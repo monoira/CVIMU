@@ -10,7 +10,7 @@
   - [KEYBINDINGS](#keybindings)
     - [fixes to VSCode](#fixes-to-vscode)
     - [navigation](#navigation)
-    - [QuickOpen and workspace switching](#quickopen-and-workspace-switching)
+    - [QuickOpen, workspace switching and search](#quickopen-workspace-switching-and-search)
     - [editors / buffers](#editors--buffers)
     - [file explorer](#file-explorer)
     - [AI](#ai)
@@ -18,7 +18,6 @@
     - [hover over code](#hover-over-code)
     - [warnings and diagnostics](#warnings-and-diagnostics)
     - [integrated terminal](#integrated-terminal)
-    - [search](#search)
     - [fold](#fold)
     - [code actions](#code-actions)
   - [DONATE](#donate)
@@ -162,20 +161,26 @@ New-Item -ItemType SymbolicLink `
 | `<leader> <leader> b` | Jump to word (before cursor) (EasyMotion) |
 | `<leader> <leader> w` | Jump to word (after cursor) (EasyMotion)  |
 
-### QuickOpen and workspace switching
+### QuickOpen, workspace switching and search
 
-| Keybinding                  | Feature                                |
-| --------------------------- | -------------------------------------- |
-| `ctrl o`                    | QuickOpen file in a new tab            |
-| `<leader> f p`              | Open recent workspaces                 |
-| `<leader> f p`+`ctrl enter` | Open recent workspaces in a new window |
+| Keybinding                  | Feature                                 |
+| --------------------------- | --------------------------------------- |
+| `ctrl o`                    | QuickOpen file in a new tab             |
+| `ctrl p`                    | Open command palette                    |
+| `<leader> f p`              | Open recent workspaces                  |
+| `<leader> f p`+`ctrl enter` | Open recent workspaces in a new window  |
+| `<leader> s s`              | Go to symbol in current file            |
+| `<leader> s S`              | Go to symbol in a whole workspace       |
+| `<leader> s d`              | Toggle problems panel                   |
+| `<leader> s r`              | Search and replace                      |
+| `<leader> /`                | Quick text search in a whole repository |
 
 ### editors / buffers
 
 | Keybinding     | Feature                       |
 | -------------- | ----------------------------- |
-| `[ b`          | Previous editor tab           |
-| `] b`          | Next editor tab               |
+| `[ b`          | Previous editor               |
+| `] b`          | Next editor                   |
 | `[ B`          | Move editor left              |
 | `] B`          | Move editor right             |
 | `alt {NUMBER}` | Go to editor {NUMBER}         |
@@ -247,18 +252,6 @@ New-Item -ItemType SymbolicLink `
 | `ctrl t`       | create new terminal               |
 | `ctrl w`       | delete active terminal            |
 | `ctrl i`       | Copilot inline terminal chat `AI` |
-
-### search
-
-| Keybinding     | Feature                                 |
-| -------------- | --------------------------------------- |
-| `ctrl p`       | Open command palette                    |
-| `<leader> s d` | Toggle problems panel                   |
-| `<leader> s r` | Search and replace                      |
-| `<leader> s s` | Go to symbol in current file            |
-| `ctrl shift o` | Go to symbol in current file            |
-| `<leader> s S` | Go to symbol in a whole workspace       |
-| `<leader> /`   | Quick text search in a whole repository |
 
 ### fold
 
