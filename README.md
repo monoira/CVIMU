@@ -204,6 +204,7 @@ New-Item -ItemType SymbolicLink `
 | `x`          | Cut selected file/directory                      |
 | `r`          | Rename selected file/directory                   |
 | `o`          | Reveal file/directory in OS file manager         |
+| `shift p`    | File preview                                     |
 | `ctrl alt r` | Open containing folder of focused file/directory |
 
 ### AI
