@@ -9,7 +9,6 @@
   - [WORKSPACES AND HOW TO USE THEM](#workspaces-and-how-to-use-them)
   - [KEYBINDINGS](#keybindings)
     - [fixes to VSCode](#fixes-to-vscode)
-    - [navigation](#navigation)
     - [QuickOpen, workspace switching and search](#quickopen-workspace-switching-and-search)
     - [editors / buffers](#editors--buffers)
     - [file explorer](#file-explorer)
@@ -143,23 +142,15 @@ New-Item -ItemType SymbolicLink `
 
 | Keybinding   | Feature                                  |
 | ------------ | ---------------------------------------- |
+| `<leader> e` | Open file explorer (with focus)          |
+| `ctrl b`     | Close / open explorer (no focus, toggle) |
+| `ctrl alt b` | toggle bold (in markdown)                |
 | `<C-d>`      | Scroll down half page and center         |
 | `<C-u>`      | Scroll up half page and center           |
 | `ctrl n`     | Down (when given a dropdown)             |
 | `ctrl p`     | Up (when given a dropdown)               |
-| `<leader> e` | Open file explorer (with focus)          |
-| `ctrl b`     | Close / open explorer (no focus, toggle) |
-| `ctrl alt b` | toggle bold (in markdown)                |
-
-### navigation
-
-| Keybinding            | Feature                                   |
-| --------------------- | ----------------------------------------- |
-| `alt h`               | Focus to left pane                        |
-| `alt l`               | Focus to right pane                       |
-| `s`                   | Search word (EasyMotion)                  |
-| `<leader> <leader> b` | Jump to word (before cursor) (EasyMotion) |
-| `<leader> <leader> w` | Jump to word (after cursor) (EasyMotion)  |
+| `alt h`      | Focus to left pane                       |
+| `alt l`      | Focus to right pane                      |
 
 ### QuickOpen, workspace switching and search
 
