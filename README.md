@@ -97,6 +97,7 @@ you can clone this project inside your `.dotfiles`
 then remove [docs](./docs/) and .git  
 then you can import [profile](./profiles/prof.code-profile)  
 **then** symlink global `settings.json`.
+**then** symlink global agent instructions.
 That's it.
 
 ### for Linux
@@ -107,12 +108,24 @@ symlinking global `settings.json`
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.json"
 ```
 
+symlinking global agent instructions (Copilot shares Opencode file)
+
+```bash
+ln -sf "$HOME/.config/opencode/AGENTS.md" "$HOME/.copilot/instructions/copilot-instructions.md"
+```
+
 ### for MacOS (untested)
 
 symlinking global `settings.json`
 
 ```bash
 ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+```
+
+symlinking global agent instructions (Copilot shares Opencode file)
+
+```bash
+ln -sf "$HOME/.config/opencode/AGENTS.md" "$HOME/.copilot/instructions/copilot-instructions.md"
 ```
 
 ### for Windows (untested)
@@ -123,6 +136,14 @@ symlinking global `settings.json`
 New-Item -ItemType SymbolicLink `
   -Path "$env:APPDATA\Code\User\settings.json" `
   -Target "$HOME\.dotfiles\CVIMU\settings.json"
+```
+
+symlinking global agent instructions (Copilot shares Opencode file)
+
+```powershell
+New-Item -ItemType SymbolicLink `
+  -Path "$env:USERPROFILE\.copilot\instructions\copilot-instructions.md" `
+  -Target "$env:USERPROFILE\.config\opencode\AGENTS.md"
 ```
 
 ## WORKSPACES AND HOW TO USE THEM
