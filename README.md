@@ -96,8 +96,8 @@ Due to how VSCode works, you must first open VSCode at least once for creation o
 you can clone this project inside your `.dotfiles`  
 then remove [docs](./docs/) and .git  
 then you can import [profile](./profiles/prof.code-profile)  
-**then** symlink global `settings.json`.
-**then** symlink global agent instructions.
+**then** symlink global `settings.json`  
+**then** symlink global agents instructions  
 That's it.
 
 ### for Linux
