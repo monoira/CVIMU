@@ -111,7 +111,7 @@ ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/.config/Code/User/settings.j
 symlinking global agent instructions (Copilot shares Opencode file)
 
 ```bash
-ln -sf "$HOME/.config/opencode/AGENTS.md" "$HOME/.copilot/instructions/copilot-instructions.md"
+ln -sf "$HOME/.config/opencode/AGENTS.md" "$HOME/.copilot/copilot-instructions.md"
 ```
 
 ### for MacOS (untested)
@@ -125,7 +125,7 @@ ln -sf "$HOME/.dotfiles/CVIMU/settings.json" "$HOME/Library/Application Support/
 symlinking global agent instructions (Copilot shares Opencode file)
 
 ```bash
-ln -sf "$HOME/.config/opencode/AGENTS.md" "$HOME/.copilot/instructions/copilot-instructions.md"
+ln -sf "$HOME/.config/opencode/AGENTS.md" "$HOME/.copilot/copilot-instructions.md"
 ```
 
 ### for Windows (untested)
@@ -142,7 +142,7 @@ symlinking global agent instructions (Copilot shares Opencode file)
 
 ```powershell
 New-Item -ItemType SymbolicLink `
-  -Path "$env:USERPROFILE\.copilot\instructions\copilot-instructions.md" `
+  -Path "$env:USERPROFILE\.copilot\copilot-instructions.md" `
   -Target "$env:USERPROFILE\.config\opencode\AGENTS.md"
 ```
 
