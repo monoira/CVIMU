@@ -51,8 +51,6 @@ plus sensible defaults and [fixes to VSCode](#fixes-to-vscode) for maximum produ
 
 Extensions in [profile](./profiles/prof.code-profile):
 
-- ESLint
-- Prettier - Code formatter
 - Container Tools
 - Paste JSON as Code
 - Code Spell Checker
@@ -61,11 +59,15 @@ Extensions in [profile](./profiles/prof.code-profile):
 - YAML
 - Catppuccin for VSCode
 - ES7+ React/Redux/React-Native snippets
-- Tailwind CSS IntelliSense
 - Postman
 - Markdown All in One
 - markdownlint
 - Bash IDE
+- Oxc
+
+- Tailwind CSS IntelliSense (disabled, I will re-enable when I get into tailwind again)
+- ESLint (disabled, kept just in case. I use Oxc now, just like React and Nestjs do)
+- Prettier (disabled, kept just in case. I use Oxc now, just like React and Nestjs do)
 
 ## DEPENDENCIES
 
