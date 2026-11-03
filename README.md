@@ -56,7 +56,8 @@ Extensions in [profile](./profiles/prof.code-profile):
 - Code Spell Checker
 - VSCode-icons
 - Vim
-- YAML
+- YAML language support
+- XML language support
 - Catppuccin for VSCode
 - ES7+ React/Redux/React-Native snippets
 - Postman
@@ -64,6 +65,8 @@ Extensions in [profile](./profiles/prof.code-profile):
 - markdownlint
 - Bash IDE
 - Oxc
+- c# language support
+- .NET install tool
 
 - Tailwind CSS IntelliSense (disabled, I will re-enable when I get into tailwind again)
 - ESLint (disabled, kept just in case. I use Oxc now, just like React and Nestjs do)
