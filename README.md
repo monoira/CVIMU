@@ -63,8 +63,6 @@ Extensions in [profile](./profiles/prof.code-profile):
 - Markdown All in One
 - markdownlint
 - Bash IDE
-- Extension Pack for Java
-- Spring Boot Extension Pack
 - YAML language support
 - XML language support
 
@@ -173,8 +171,8 @@ New-Item -ItemType SymbolicLink `
 | `ctrl alt b` | toggle bold (in markdown)                |
 | `<C-d>`      | Scroll down half page and center         |
 | `<C-u>`      | Scroll up half page and center           |
-| `ctrl j`     | Down (when given a dropdown)             |
-| `ctrl k`     | Up (when given a dropdown)               |
+| `ctrl n`     | Down (when given a dropdown)             |
+| `ctrl p`     | Up (when given a dropdown)               |
 | `alt h`      | Focus to left pane                       |
 | `alt l`      | Focus to right pane                      |
 
