@@ -181,7 +181,7 @@ New-Item -ItemType SymbolicLink `
 | Keybinding                  | Feature                                 |
 | --------------------------- | --------------------------------------- |
 | `ctrl o`                    | QuickOpen file in a new tab             |
-| `ctrl p`                    | Open command palette                    |
+| `ctrl shift p`              | Open command palette                    |
 | `<leader> f p`              | Open recent workspaces                  |
 | `<leader> f p`+`ctrl enter` | Open recent workspaces in a new window  |
 | `<leader> s s`              | Go to symbol in current file            |
