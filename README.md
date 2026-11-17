@@ -164,17 +164,16 @@ New-Item -ItemType SymbolicLink `
 - extension updates are disabled by default to reduce interruptions.
   You can update extensions by going to `extensions > check for extension updates`.
 
-| Keybinding   | Feature                                  |
-| ------------ | ---------------------------------------- |
-| `<leader> e` | Open file explorer (with focus)          |
-| `ctrl b`     | Close / open explorer (no focus, toggle) |
-| `ctrl alt b` | toggle bold (in markdown)                |
-| `<C-d>`      | Scroll down half page and center         |
-| `<C-u>`      | Scroll up half page and center           |
-| `ctrl n`     | Down (when given a dropdown)             |
-| `ctrl p`     | Up (when given a dropdown)               |
-| `ctrl h`     | Focus to left pane                       |
-| `ctrl l`     | Focus to right pane                      |
+| Keybinding   | Feature                          |
+| ------------ | -------------------------------- |
+| `<leader> e` | Open file explorer (with focus)  |
+| `ctrl alt b` | toggle bold (in markdown)        |
+| `<C-d>`      | Scroll down half page and center |
+| `<C-u>`      | Scroll up half page and center   |
+| `ctrl n`     | Down (when given a dropdown)     |
+| `ctrl p`     | Up (when given a dropdown)       |
+| `ctrl h`     | Focus to left pane               |
+| `ctrl l`     | Focus to right pane              |
 
 ### QuickOpen, workspace switching and search
 
@@ -211,6 +210,11 @@ New-Item -ItemType SymbolicLink `
 | Keybinding   | Feature                                          |
 | ------------ | ------------------------------------------------ |
 | `<leader> e` | Focus file explorer                              |
+| `ctrl b`     | Close / open explorer (no focus, toggle)         |
+| `ctrl d`     | Go all the way down (when focused)               |
+| `ctrl u`     | Go all the way up (when focused)                 |
+| `ctrl n`     | Go down one item (when focused)                  |
+| `ctrl p`     | Go up one item (when focused)                    |
 | `a`          | Create a new file                                |
 | `f`          | Create a new directory                           |
 | `d`          | Delete selected file/directory                   |
