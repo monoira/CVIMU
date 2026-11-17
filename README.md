@@ -173,8 +173,8 @@ New-Item -ItemType SymbolicLink `
 | `<C-u>`      | Scroll up half page and center           |
 | `ctrl n`     | Down (when given a dropdown)             |
 | `ctrl p`     | Up (when given a dropdown)               |
-| `ctrl h`      | Focus to left pane                       |
-| `ctrl l`      | Focus to right pane                      |
+| `ctrl h`     | Focus to left pane                       |
+| `ctrl l`     | Focus to right pane                      |
 
 ### QuickOpen, workspace switching and search
 
