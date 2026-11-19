@@ -21,6 +21,9 @@
     - [code actions](#code-actions)
   - [DONATE](#donate)
 
+ARCHIVED. MOVED TO:  
+https://github.com/monoira/.dotfiles
+
 CODE-VIM-ULTIMATE aka CVIMU is a Visual Studio Code setup with:
 
 - Vim Extension.
